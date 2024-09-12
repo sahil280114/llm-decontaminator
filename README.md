@@ -11,6 +11,7 @@ pip install -r requirement.txt
 
 ## Run
 Download and format test datasets
+Note: Some of the datasets in here will require you to accept permissions in huggingface hub on the dataset page
 ~~~bash
 python3 get_test_data.py
 ~~~
