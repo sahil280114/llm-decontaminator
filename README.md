@@ -1,3 +1,30 @@
+# Running for reflection data
+
+## Install
+~~~bash
+git clone https://github.com/lm-sys/llm-decontaminator.git
+cd llm-decontaminator
+python3 -m venv decontamintor
+source decontamintor/bin/activate
+pip install -r requirement.txt
+~~~
+
+## Run
+Download and format test datasets
+~~~bash
+python3 get_test_data.py
+~~~
+
+Set API Key in run_reflection_eval.sh
+
+~~~bash
+bash run_reflection_eval.sh
+~~~
+
+Make sure to have reflection_v5_formatted.jsonl in the directory
+
+
+
 # LLM Decontaminator
 
 | [Paper](https://arxiv.org/pdf/2311.04850.pdf) | [Blog](https://lmsys.org/blog/2023-11-14-llm-decontaminator/) |
